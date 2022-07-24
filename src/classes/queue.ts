@@ -1,5 +1,5 @@
 export class Queue<T> {
-  public data: T[];
+  private data: T[];
 
   constructor (data: T[] = []) {
     this.data = data;
@@ -23,5 +23,9 @@ export class Queue<T> {
 
   public empty(): void {
     this.data = [];
+  }
+
+  public getData(): T[] {
+    return [...this.data];
   }
 }

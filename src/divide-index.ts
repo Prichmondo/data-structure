@@ -1,5 +1,5 @@
 import { divideAndConquerSearch }  from './classes/divideAndConquer';
-import { test }  from './classes/test';
+import { performanceTest }  from './classes/performanceTest';
 import citiesJson from 'cities.json';
 
 type City = {
@@ -44,16 +44,16 @@ function findCityWithFind(cityName: string, iso: string) {
 console.log(`Searching "${cityToSearch}(${iso})" through an array of ${cities.length} cities`)
 
 console.log('- findCityWithDivideAndConquer O(logn)');
-test(() => {  
+performanceTest(() => {  
   findCityWithDivideAndConquer(cityToSearch, iso);
 }, iterations);
 
 console.log('- findCityWithForLoop O(n)');
-test(() => {
+performanceTest(() => {
   findCityWithForLoop(cityToSearch, iso);
 }, iterations);
 
 console.log('- findCityWithFind O(n)');
-test(() => {
+performanceTest(() => {
   findCityWithFind(cityToSearch, iso);
 }, iterations);

@@ -1,4 +1,4 @@
-export function test(fn: () => void, iterations = 1000) {
+export function performanceTest(fn: () => void, iterations = 1000) {
   const startTime = performance.now();
   for(let i = 0; i<iterations; i++) {
       fn();            
