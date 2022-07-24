@@ -28,8 +28,5 @@
   },
   "dependencies": {
     "cities.json": "^1.1.10"
-  },
-  "transform": {
-    "\\.js$": "<rootDir>/node_modules/babel-jest"
   }
 }
