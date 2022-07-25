@@ -6,7 +6,7 @@ export class Stack<T> {
   }
 
   public has(item: T): boolean {
-    return typeof this.data.find(i => i === item) !== undefined;
+    return typeof this.data.find(i => i === item) !== 'undefined';
   }
 
   public pull(): T | undefined {

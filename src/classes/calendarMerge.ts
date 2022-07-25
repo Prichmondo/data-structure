@@ -56,6 +56,7 @@ const mergeCalendars = (calendar1: Calendar, calendar2: Calendar) => {
     if(startMeetingEnd <= currentMeetingEnd) {
       if(startMeetingEnd >= currentMeetingStart) {
         startMeeting = [startMeeting[0], currentMeeting[1]];
+
       } else {
         response.push([...startMeeting]);
         startMeeting = currentMeeting;        
